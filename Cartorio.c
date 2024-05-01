@@ -141,7 +141,8 @@ int main()
 	printf("Escolha a opção desejada:\n\n"); //mensagem de opção para o user
 	printf("\t1 - Registrar nomes\n"); // o barra t é somente para um espaço  | opção de escolha
 	printf("\t2 - Consultar nomes\n"); //opção de escolha
-	printf("\t3 - Deletar nomes\n\n\n\n"); //opção de escolha
+	printf("\t3 - Deletar nomes\n"); //opção de escolha
+	printf("\t4 - Sair do sistema\n\n\n");//opção de escolha
 	printf("Opção"); //fim do menu
 	
     scanf("%d", &opcao); //armazenando a escolha do usuario
@@ -162,6 +163,12 @@ int main()
     	case 3: //opção 3
     	deletar();	//chamada de funções
     	break;
+    	
+    	case 4: //opção 4
+    	printf("Obrigada por utilizar o sistema!\n"); //chamdaa de função
+    	return 0; //retornar o valor a zero, ou seja, quebra laço, função, etc e sai do sistema
+    	break;
+    	
     	
     	default:
     	printf("Essa opção não está disponivel!\n"); //resposta do sistema de acordo com a solicitação anterior
